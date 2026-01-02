@@ -1,5 +1,10 @@
-# Number Guessing Game
-This is a simple Python game where the player guesses a secret number.
-- Input: Number from 1–10
-- Output: Tells if the guess is too high, too low, or correct
-- Built using: Python 3
+secret = 7
+
+guess = int(input("Guess the number (1-10): "))
+
+if guess == secret:
+    print("🎉 Correct! You guessed it!")
+elif guess > secret:
+    print("Too high!")
+else:
+    print("Too low!")
